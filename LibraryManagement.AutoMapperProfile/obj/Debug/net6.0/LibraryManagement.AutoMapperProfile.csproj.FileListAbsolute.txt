@@ -1,0 +1,17 @@
+C:\Users\User\source\repos\LibraryManagement\LibraryManagement.AutoMapperProfile\bin\Debug\net6.0\LibraryManagement.AutoMapperProfile.deps.json
+C:\Users\User\source\repos\LibraryManagement\LibraryManagement.AutoMapperProfile\bin\Debug\net6.0\LibraryManagement.AutoMapperProfile.dll
+C:\Users\User\source\repos\LibraryManagement\LibraryManagement.AutoMapperProfile\bin\Debug\net6.0\LibraryManagement.AutoMapperProfile.pdb
+C:\Users\User\source\repos\LibraryManagement\LibraryManagement.AutoMapperProfile\bin\Debug\net6.0\LibraryManagement.BLL.dll
+C:\Users\User\source\repos\LibraryManagement\LibraryManagement.AutoMapperProfile\bin\Debug\net6.0\LibraryManagement.DAL.dll
+C:\Users\User\source\repos\LibraryManagement\LibraryManagement.AutoMapperProfile\bin\Debug\net6.0\LibraryManagement.BLL.pdb
+C:\Users\User\source\repos\LibraryManagement\LibraryManagement.AutoMapperProfile\bin\Debug\net6.0\LibraryManagement.DAL.pdb
+C:\Users\User\source\repos\LibraryManagement\LibraryManagement.AutoMapperProfile\obj\Debug\net6.0\LibraryManagement.AutoMapperProfile.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\LibraryManagement\LibraryManagement.AutoMapperProfile\obj\Debug\net6.0\LibraryManagement.AutoMapperProfile.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\LibraryManagement\LibraryManagement.AutoMapperProfile\obj\Debug\net6.0\LibraryManagement.AutoMapperProfile.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\LibraryManagement\LibraryManagement.AutoMapperProfile\obj\Debug\net6.0\LibraryManagement.AutoMapperProfile.AssemblyInfo.cs
+C:\Users\User\source\repos\LibraryManagement\LibraryManagement.AutoMapperProfile\obj\Debug\net6.0\LibraryManagement.AutoMapperProfile.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\LibraryManagement\LibraryManagement.AutoMapperProfile\obj\Debug\net6.0\LibraryManagement.AutoMapperProfile.csproj.CopyComplete
+C:\Users\User\source\repos\LibraryManagement\LibraryManagement.AutoMapperProfile\obj\Debug\net6.0\LibraryManagement.AutoMapperProfile.dll
+C:\Users\User\source\repos\LibraryManagement\LibraryManagement.AutoMapperProfile\obj\Debug\net6.0\refint\LibraryManagement.AutoMapperProfile.dll
+C:\Users\User\source\repos\LibraryManagement\LibraryManagement.AutoMapperProfile\obj\Debug\net6.0\LibraryManagement.AutoMapperProfile.pdb
+C:\Users\User\source\repos\LibraryManagement\LibraryManagement.AutoMapperProfile\obj\Debug\net6.0\ref\LibraryManagement.AutoMapperProfile.dll
