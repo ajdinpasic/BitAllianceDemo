@@ -1,0 +1,19 @@
+﻿** Highlights
+     Tables that will be recreated with data migrated
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[Book] (Table)
+       [dbo].[Member] (Table)
+       [dbo].[Rental] (Table)
+       [dbo].[Fk_Book_Rental_BookId] (Foreign Key)
+       [dbo].[Fk_Member_Rental_MemberId] (Foreign Key)
+
+** Supporting actions

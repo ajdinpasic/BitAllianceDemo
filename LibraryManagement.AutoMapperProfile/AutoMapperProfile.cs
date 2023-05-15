@@ -14,6 +14,8 @@ namespace LibraryManagement.AutoMapperProfile
         public AutoMapperProfile()
         {
             CreateMap<Book, BookDTO>();
+            // CreateMap<Book, BookDTO>().ForMember(x=> x.Author, options => options.Ignore());
+            CreateMap<Rental, RentalDTO>();
         }
     }
 }

@@ -19,6 +19,7 @@ namespace LibraryManagement.Controllers
         }
 
         // GET: api/<BookController>
+        //[Route("api/books")]
         [HttpGet]
         public IEnumerable<BookDTO> GetBooks()
         {
@@ -50,10 +51,11 @@ namespace LibraryManagement.Controllers
         //{
         //}
 
-        //// DELETE api/<BookController>/5
-        //[HttpDelete("{id}")]
-        //public void Delete(int id)
-        //{
-        //}
+        // DELETE api/<BookController>/5
+        [HttpDelete("{id}")]
+        public void Delete(Guid id)
+        {
+            _bookService.DeleteBook(id);
+        }
     }
 }

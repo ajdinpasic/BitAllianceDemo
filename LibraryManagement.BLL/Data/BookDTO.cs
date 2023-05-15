@@ -12,5 +12,7 @@ namespace LibraryManagement.BLL.Data
         public string Author { get; set; } = string.Empty;
         public DateTime ReleaseYear { get; set; }
 
+        public List<RentalDTO> Rentals { get; set; } = new List<RentalDTO>();
+
     }
 }

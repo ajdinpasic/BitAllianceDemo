@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryManagement.BLL", "Li
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryManagement.DAL", "LibraryManagement.DAL\LibraryManagement.DAL.csproj", "{DBB50A54-36F9-4A85-BE01-0DF4A529F454}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManagement.AutoMapperProfile", "LibraryManagement.AutoMapperProfile\LibraryManagement.AutoMapperProfile.csproj", "{1FB976D5-5B36-4712-B8C9-C6E1EAD1B5FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryManagement.AutoMapperProfile", "LibraryManagement.AutoMapperProfile\LibraryManagement.AutoMapperProfile.csproj", "{1FB976D5-5B36-4712-B8C9-C6E1EAD1B5FF}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "LibraryManagement.Database", "LibraryManagement.Database\LibraryManagement.Database.sqlproj", "{A3ABF85C-0D7B-4166-8259-4B9D9769A0C0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,12 @@ Global
 		{1FB976D5-5B36-4712-B8C9-C6E1EAD1B5FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1FB976D5-5B36-4712-B8C9-C6E1EAD1B5FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1FB976D5-5B36-4712-B8C9-C6E1EAD1B5FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3ABF85C-0D7B-4166-8259-4B9D9769A0C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3ABF85C-0D7B-4166-8259-4B9D9769A0C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3ABF85C-0D7B-4166-8259-4B9D9769A0C0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A3ABF85C-0D7B-4166-8259-4B9D9769A0C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3ABF85C-0D7B-4166-8259-4B9D9769A0C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3ABF85C-0D7B-4166-8259-4B9D9769A0C0}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

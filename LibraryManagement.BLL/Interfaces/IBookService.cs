@@ -13,5 +13,7 @@ namespace LibraryManagement.BLL.Interfaces
         BookDTO GetBook(Guid BookId);
         BookDTO AddNewBook(string title, string author,
              string publisher, DateTime releaseYear);
+
+        void DeleteBook(Guid BookId);
     }
 }

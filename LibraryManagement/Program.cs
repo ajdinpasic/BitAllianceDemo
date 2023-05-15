@@ -2,8 +2,10 @@ using AutoMapper;
 using LibraryManagement.AutoMapperProfile;
 using LibraryManagement.BLL.Interfaces;
 using LibraryManagement.BLL.Services;
+using LibraryManagement.DAL;
 using LibraryManagement.DAL.Interfaces;
 using LibraryManagement.DAL.Repositories;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,6 +27,9 @@ var config = new MapperConfiguration(cfg =>
 var mapper = config.CreateMapper();
 builder.Services.AddSingleton(mapper);
 
+
+builder.Services.AddDbContext<LibraryDBContext>(
+       options => options.UseSqlServer("Data Source=.;Initial Catalog=LibraryDB;Integrated Security=True;MultipleActiveResultSets=True;TrustServerCertificate=True"));
 
 
 var app = builder.Build();

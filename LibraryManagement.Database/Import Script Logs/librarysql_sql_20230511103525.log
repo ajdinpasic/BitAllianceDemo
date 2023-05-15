@@ -1,0 +1,12 @@
+11. 5. 2023. 12:35:25	This log contains information about the import operation of the script 'librarysql.sql' into project 'LibraryManagement.Database' on computer 'DESKTOP-40BPOAN' by user'User.
+11. 5. 2023. 12:35:26	Started importing file: C:\Users\User\Downloads\librarysql.sql 
+11. 5. 2023. 12:35:26	File name C:\Users\User\Downloads\librarysql.sql (size: 1816)
+11. 5. 2023. 12:35:26	Parsing import script
+11. 5. 2023. 12:35:26	Total number of batches in script: 1
+11. 5. 2023. 12:35:26	Total number of statements in script: 5
+11. 5. 2023. 12:35:26	The script was successfully imported into the project.
+11. 5. 2023. 12:35:26	Analyzing schema objects...
+11. 5. 2023. 12:35:26	Scanning project for duplicate elements
+11. 5. 2023. 12:35:26	Finished duplicate element processing
+11. 5. 2023. 12:35:27	A summary of the import was saved to the following location: C:\Users\User\source\repos\LibraryManagement\LibraryManagement.Database\Import Script Logs\librarysql_sql_20230511103525.log
+11. 5. 2023. 12:35:27	Click Finish to continue...

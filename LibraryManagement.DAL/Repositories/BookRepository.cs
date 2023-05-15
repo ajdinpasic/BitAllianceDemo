@@ -1,5 +1,6 @@
 ﻿using LibraryManagement.DAL.Data;
 using LibraryManagement.DAL.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,25 +11,38 @@ namespace LibraryManagement.DAL.Repositories
 {
     public class BookRepository : IBookRepository
     {
+        private readonly LibraryDBContext _dbContext;
+
+        public BookRepository(LibraryDBContext dbContext)
+        {
+            _dbContext = dbContext;
+        }
         
         public Book AddNewBook(string title, string author, string publisher, DateTime releaseYear)
         {
-            var books = GetStaticBooks();
-            var book = new Book { Title = title, Author = author, Publisher = publisher, ReleaseYear = releaseYear };
+            //var books = GetStaticBooks();
+            var book = new Book { BookId = Guid.NewGuid(),Title = title, Author = author, Publisher = publisher, ReleaseYear = releaseYear };
             //books.Add(book); Mimic DB
+            _dbContext.Book.Add(book);
+            _dbContext.SaveChanges(); // commit 
             return book;
         }
 
         public IEnumerable<Book> GetAllBooks()
         {
-           return GetStaticBooks();
+            //return _dbContext.Book.AsQueryable();// SELECT * FROM Book
+            return _dbContext.Book.Include(c=> c.Rentals);
+            // SELECT * FROM Book 
+            // INNER JOIN Rental on Book.BookId = Rental.BookId
         }
+
+        // SELECT * FROM book where bookid = 1
 
         public Book GetBook(Guid bookId)
         {
-            var books = GetStaticBooks();
+            return (_dbContext.Book.Where(x=> x.BookId == bookId).FirstOrDefault())!;
 
-            return (books.Where(y => y.BookId == bookId).FirstOrDefault())!; //lambda expression => anonymous function
+            //return (books.Where(y => y.BookId == bookId).FirstOrDefault())!; //lambda expression => anonymous function
         }
 
         public static List<Book> GetStaticBooks()
@@ -55,5 +69,12 @@ namespace LibraryManagement.DAL.Repositories
 
             return booksGlobal;
     }
+
+        public void DeleteBook(Guid id)
+        {
+            var book = _dbContext.Book.Where(x => x.BookId == id).First();
+            _dbContext.Book.Remove(book);
+            _dbContext.SaveChanges();
+        }
     }
 }

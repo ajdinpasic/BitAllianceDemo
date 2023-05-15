@@ -36,6 +36,11 @@ namespace LibraryManagement.BLL.Services
             return convertedBook;
         }
 
+        public void DeleteBook(Guid BookId)
+        {
+            _bookRepository.DeleteBook(BookId);
+        }
+
         public BookDTO GetBook(Guid bookId)
         {
             var book = _bookRepository.GetBook(bookId);

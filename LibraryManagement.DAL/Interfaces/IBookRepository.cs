@@ -13,5 +13,7 @@ namespace LibraryManagement.DAL.Interfaces
         Book GetBook(Guid id);
         Book AddNewBook(string title, string author,
            string publisher, DateTime releaseYear);
+
+        void DeleteBook(Guid id);
     }
 }
