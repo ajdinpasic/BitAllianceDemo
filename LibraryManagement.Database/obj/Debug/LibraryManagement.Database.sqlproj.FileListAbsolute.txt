@@ -4,7 +4,3 @@ C:\Users\User\source\repos\LibraryManagement\LibraryManagement.Database\bin\Debu
 C:\Users\User\source\repos\LibraryManagement\LibraryManagement.Database\obj\Debug\LibraryManagement.Database.sqlproj.AssemblyReference.cache
 C:\Users\User\source\repos\LibraryManagement\LibraryManagement.Database\obj\Debug\LibraryManagement.Database.dll
 C:\Users\User\source\repos\LibraryManagement\LibraryManagement.Database\obj\Debug\LibraryManagement.Database.pdb
-C:\Users\User\source\repos\LibraryManagement\LibraryManagement.Database\obj\Debug\Model.xml
-C:\Users\User\source\repos\LibraryManagement\LibraryManagement.Database\obj\Debug\refactor.xml
-C:\Users\User\source\repos\LibraryManagement\LibraryManagement.Database\obj\Debug\postdeploy.sql
-C:\Users\User\source\repos\LibraryManagement\LibraryManagement.Database\obj\Debug\predeploy.sql

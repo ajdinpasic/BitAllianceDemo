@@ -11,9 +11,20 @@ Post-Deployment Script Template
 */
 
 
-INSERT INTO [dbo].Book (BookId,Author,Publisher,ReleaseYear,Ttitle)
+DECLARE @ScriptID uniqueidentifier 
+SET @ScriptID = '9F85FAFD-C847-4B18-B151-67C171F3AE67'
+
+IF NOT EXISTS(SELECT * FROM [dbo].ScriptExecutionHistory WHERE ScriptExecutionHistory.ScriptId = @ScriptID)
+
+BEGIN
+
+INSERT INTO [dbo].Book (BookId,Author,Publisher,ReleaseYear,Title)
 VALUES (newid(),'Mato Lovrak','Svjetlost',GETUTCDATE(),'Vlak u snijegu')
 
+INSERT INTO [dbo].ScriptExecutionHistory (ScriptId,ExecutionTime)
+VALUES(@ScriptID, GETUTCDATE())
+
+END
 
 -- Hint: napisat logiku da provjeri da li ima vec postojeci rekord
 -- ako ima nemoj radit insert ako nema uradi

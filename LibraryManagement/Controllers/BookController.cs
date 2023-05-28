@@ -6,7 +6,7 @@ using LibraryManagement.BLL.Data;
 
 namespace LibraryManagement.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/books")]
     [ApiController]
     public class BookController : ControllerBase
     {
@@ -27,10 +27,11 @@ namespace LibraryManagement.Controllers
         }
 
         // GET api/<BookController>/5
+        //[Route("api/book")]
         [HttpGet("{bookId}")]
         public BookDTO Get(Guid bookId)
         {
-            if(bookId == Guid.Empty )
+            if (bookId == Guid.Empty)
             {
                 throw new Exception("Missing parameter name");
             }
@@ -38,6 +39,7 @@ namespace LibraryManagement.Controllers
         }
 
         // POST api/<BookController>
+        //[Route("api/book")]
         [HttpPost]
         public BookDTO Post([FromBody] PostBookDTO newBook )
         {
@@ -52,6 +54,7 @@ namespace LibraryManagement.Controllers
         //}
 
         // DELETE api/<BookController>/5
+        //[Route("api/book")]
         [HttpDelete("{id}")]
         public void Delete(Guid id)
         {

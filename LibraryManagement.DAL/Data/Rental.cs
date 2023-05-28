@@ -12,6 +12,6 @@ namespace LibraryManagement.DAL.Data
         [Key]
         public Guid RentalId { get; set; }
 
-       // public virtual Book Book { get; set; } // kontra strana 1-M veze
+        public virtual Book Book { get; set; } = new Book();// kontra strana 1-M veze
     }
 }

@@ -1,4 +1,5 @@
 ﻿-- Table dbo.Member
+-- Table dbo.Member
 create table
 	[dbo].[Member]
 (
